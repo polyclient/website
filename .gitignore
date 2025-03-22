@@ -13,6 +13,10 @@
 /build
 *.tsbuildinfo
 
+# IDE related
+.idea
+.vscode
+
 # misc
 .DS_Store
 *.pem

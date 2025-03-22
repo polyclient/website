@@ -5,5 +5,5 @@
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
 
 :root {
-  --fd-layout-width: 1400px;
+	--fd-layout-width: 1400px;
 }
