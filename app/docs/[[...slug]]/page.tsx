@@ -20,13 +20,12 @@ export default async function Page(props: {
 			full={page.data.full}
 			tableOfContent={{
 				style: 'clerk',
-				single: false,
 			}}
 			editOnGithub={{
-				repo: 'poqk',
+				repo: 'website',
 				owner: 'poqk',
 				sha: 'master',
-				path: `apps/docs/content/docs/${page.file.path}`,
+				path: `content/docs/${page.file.path}`,
 			}}
 			lastUpdate={page.data.lastModified}
 		>

@@ -1,6 +1,160 @@
 ---
-title: Linux
-description: Linux
+title: Installing Poqk on Linux
 ---
 
-TODO: Write content for linux
+## 1. Bash script (All distros)
+
+```bash
+curl -fsSL https://poqk.pages.dev/install.sh | bash
+```
+
+The script does the following:
+
+1. Detects the system architecture.
+2. Downloads the appropriate binary.
+3. Extracts it to `/usr/local/bin/poqk`.
+4. Ensures the binary is executable.
+5. Adds the binary to the user's PATH.
+
+## 2. Package managers
+
+### Arch Linux (AUR)
+
+Requires an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers), such as [`yay`](https://github.com/Jguer/yay)/[`paru`](https://github.com/Morganamilo/paru)/[`pikaur`](https://github.com/actionless/pikaur).
+
+```bash
+yay -S poqk
+
+# or
+paru -S poqk
+
+# or
+pikaur -S poqk
+```
+
+Or manually:  
+
+```bash
+git clone https://aur.archlinux.org/poqk.git
+cd poqk
+makepkg -si
+```
+
+### Debian-based (Ubuntu, Pop!_OS, Linux Mint, etc.)
+
+```bash
+echo "deb [trusted=yes] https://poqk.pages.dev/deb stable main" | sudo tee /etc/apt/sources.list.d/poqk.list
+sudo apt update
+sudo apt install poqk
+```
+
+### Fedora/RHEL-Based (DNF - Copr Repository)
+
+```bash
+sudo dnf copr enable poqk/poqk
+sudo dnf install poqk
+```
+
+### openSUSE (Zypper - OBS Repository)
+
+```bash
+sudo zypper addrepo https://download.opensuse.org/repositories/home:poqk/poqk.repo
+sudo zypper refresh
+sudo zypper install poqk
+```
+
+### Alpine Linux (APK - Community Repository)
+
+```bash
+echo "@community https://poqk.pages.dev/alpine" | sudo tee -a /etc/apk/repositories
+sudo apk update
+sudo apk add poqk
+```
+
+### Void Linux (XBPS - Third-Party Repository)
+
+```bash
+sudo xbps-install -S poqk
+```
+
+## 3. AppImage (Portable Option)
+
+1. Download:  
+
+   ```bash
+   wget https://poqk.pages.dev/releases/latest/poqk.AppImage -O poqk.AppImage
+   ```
+
+2. Make executable:  
+
+   ```bash
+   chmod +x poqk.AppImage
+   ```
+
+3. Run:  
+
+   ```bash
+   ./poqk.AppImage
+   ```
+
+4. (Optional) Move to a system-wide location:  
+
+   ```bash
+   sudo mv poqk.AppImage /usr/local/bin/poqk
+   ```
+
+---
+
+## Post-Installation Steps
+
+### Verify Installation
+
+```bash
+poqk --version
+```
+
+### Enable Shell Completion
+
+For Bash:
+
+```bash
+poqk completion bash | sudo tee /etc/bash_completion.d/poqk
+```
+
+For Zsh:
+
+```bash
+poqk completion zsh > ~/.zshrc
+source ~/.zshrc
+```
+
+For Fish:
+
+```bash
+poqk completion fish > ~/.config/fish/completions/poqk.fish
+```
+
+### Adding to PATH (If Needed)
+
+If for some reason `poqk` is not recognized after installation, add it to your PATH:  
+
+For Bash:
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+For Zsh:  
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+For Fish:  
+
+```bash
+echo 'set -gx PATH $HOME/.local/bin $PATH' >> ~/.config/fish/config.fish
+```
+
