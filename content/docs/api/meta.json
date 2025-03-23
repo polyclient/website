@@ -1,0 +1,7 @@
+{
+  "title": "API",
+  "description": "API reference for integrations",
+  "icon": "Satellite",
+  "root": true,
+  "pages": ["index"]
+}

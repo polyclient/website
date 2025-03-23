@@ -1,0 +1,7 @@
+{
+  "title": "Plugins",
+  "description": "Extend Poqk with custom plugins",
+  "icon": "Plug",
+  "root": true,
+  "pages": ["index"]
+}

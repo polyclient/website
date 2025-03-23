@@ -1,0 +1,7 @@
+{
+  "title": "GUI",
+  "description": "Graphical user interface for Poqk",
+  "icon": "Wallpaper",
+  "root": true,
+  "pages": ["index"]
+}

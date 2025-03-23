@@ -1,0 +1,24 @@
+{
+  "title": "Guide",
+  "description": "Guide to start using Poqk",
+  "icon": "Library",
+  "root": true,
+  "pages": [
+    "---Introduction---",
+    "index",
+
+    "---Installation---",
+    "installation/system-requirements",
+    "installation/linux",
+    "installation/macos",
+    "installation/windows",
+    "installation/docker",
+    "installation/uninstall",
+
+    "---Quick Start---",
+    "quick-start/first-connection",
+    "quick-start/basic-operations",
+
+    "---Configuration---"
+  ]
+}
