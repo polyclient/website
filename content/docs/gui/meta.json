@@ -1,6 +1,6 @@
 {
   "title": "GUI",
-  "description": "Graphical user interface for Poqk",
+  "description": "Graphical user interface for PolyClient",
   "icon": "Wallpaper",
   "root": true,
   "pages": ["index"]

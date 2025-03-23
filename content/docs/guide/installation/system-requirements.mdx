@@ -1,6 +1,37 @@
 ---
 title: System requirements
-description: System requirements
 ---
 
-TODO: Write content for system-requirements
+<Callout>
+    PolyClient supports **Linux**, **macOS**, and **Windows** on **x86_64** and **ARM64** architectures.
+</Callout>
+
+## Supported platforms
+
+### **Linux**
+- **Distributions:** Any with **glibc ≥ 2.31** or **musl ≥ 1.2.2**  
+- **Formats:** `tar.gz`, `deb`, `rpm`, `apk`, `pkg.tar.zst`
+
+### **macOS**
+- **Versions:** **macOS 11 (Big Sur) or later**  
+- **Architectures:** `x86_64`, `aarch64`  
+- **Format:** `tar.gz`
+
+### **Windows**
+- **Versions:** **Windows 10 (21H2) or later**  
+- **Architectures:** `x86_64`, `aarch64`  
+- **Format:** `zip`
+
+## Minimum requirements
+- **CPU:** `x86_64` or `ARM64`  
+- **RAM:** `512 MB – 1 GB` (headless mode, no GUI)  
+- **Disk:** `~20 MB` (binary + config + logs)
+
+## Recommended requirements
+- **CPU:** `2+ cores` (`x86_64` or `ARM64`)  
+- **RAM:** `2 GB+` (for smooth GUI operation, especially with large datasets)  
+- **Disk:** `~100 MB` (includes third-party plugins)
+
+## Optional requirements
+- **Internet connection:** Required for downloading plugins and updates.  
+- **Docker:** Required for running PolyClient in a Docker container.

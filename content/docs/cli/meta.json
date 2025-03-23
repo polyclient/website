@@ -1,6 +1,6 @@
 {
   "title": "CLI",
-  "description": "Command line interface for Poqk",
+  "description": "Command line interface for PolyClient",
   "icon": "Terminal",
   "root": true,
   "pages": ["index"]

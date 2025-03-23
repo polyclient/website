@@ -1,62 +1,61 @@
 ---
 title: Introduction
-description: Guide to start using Poqk
+description: Guide to start using PolyClient
 icon: Book
 ---
 
-## What is Poqk?
+## What is PolyClient?
 
-Poqk is a fast, extensible, cross-platform database management solution for SQL and NoSQL databases. It provides tools for administration, development, and integration with a focus on security, performance, and extensibility.
+PolyClient is a fast, extensible, cross-platform database management solution for SQL and NoSQL databases. It provides tools for administration, development, and integration with a focus on security, performance, and extensibility.
 
+## Why PolyClient?
 
-## Why Poqk?
-
-Most alternatives are either complex to use, restrictive, or lock essential features behind "pro" subscriptions. Poqk is fully open-source and modular, allowing unrestricted customization, external integrations, and support for SQL and NoSQL databases without reliance on proprietary solutions.
+Most alternatives are either complex to use, restrictive, or lock essential features behind "pro" subscriptions. PolyClient is fully open-source and modular, allowing unrestricted customization, external integrations, and support for SQL and NoSQL databases without reliance on proprietary solutions.
 
 ## Database Support
 
-Poqk is designed to support a wide range of **SQL, NoSQL, and analytical databases**. The following table outlines the support status for each database engine:
+PolyClient is designed to support a wide range of **SQL and NoSQL databases**. The following table outlines the support status for each database engine:
 
-| Database        | Type        | Support Status | Version | Reference                                                                                           |
-| :-------------- | :---------- | :------------- | :------ | :-------------------------------------------------------------------------------------------------- |
-| PostgreSQL      | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/postgresql) · [Documentation](https://poqk.pages.dev/databases/postgresql)   |
-| MySQL           | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/mysql) · [Documentation](https://poqk.pages.dev/databases/mysql)             |
-| SQLite          | Relational  | 🚧 Developing  | TBD     | [Source](plugins/sqlite) · [Documentation](https://poqk.pages.dev/databases/sqlite)           |
-| SQL Server      | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/mssql) · [Documentation](https://poqk.pages.dev/databases/mssql)             |
-| Oracle Database | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/oracle) · [Documentation](https://poqk.pages.dev/databases/oracle)           |
-| MariaDB         | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/mariadb) · [Documentation](https://poqk.pages.dev/databases/mariadb)         |
-| Firebird        | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/firebird) · [Documentation](https://poqk.pages.dev/databases/firebird)       |
-| LibSQL          | Relational  | 🗓️ Upcoming    | TBD     | [Source](plugins/libsql) · [Documentation](https://poqk.pages.dev/databases/libsql)           |
-| MongoDB         | NoSQL       | 🗓️ Upcoming    | TBD     | [Source](plugins/mongodb) · [Documentation](https://poqk.pages.dev/databases/mongodb)         |
-| Redis           | NoSQL       | 🗓️ Upcoming    | TBD     | [Source](plugins/redis) · [Documentation](https://poqk.pages.dev/databases/redis)             |
-| Cassandra       | NoSQL       | 🗓️ Upcoming    | TBD     | [Source](plugins/cassandra) · [Documentation](https://poqk.pages.dev/databases/cassandra)     |
-| CockroachDB     | Distributed | 🗓️ Upcoming    | TBD     | [Source](plugins/cockroachdb) · [Documentation](https://poqk.pages.dev/databases/cockroachdb) |
-| DuckDB          | Analytical  | 🗓️ Upcoming    | TBD     | [Source](plugins/duckdb) · [Documentation](https://poqk.pages.dev/databases/duckdb)           |
-| ClickHouse      | Analytical  | 🗓️ Upcoming    | TBD     | [Source](plugins/clickhouse) · [Documentation](https://poqk.pages.dev/databases/clickhouse)   |
+| Database                                                                      | Type        | Support Status | Version | Reference                                                                                                                  |
+| :---------------------------------------------------------------------------- | :---------- | :------------- | :------ | :------------------------------------------------------------------------------------------------------------------------- |
+| [PostgreSQL](https://www.postgresql.org)                                      | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/postgresql) · [Documentation](https://polyclient.pages.dev/databases/postgresql)   |
+| [MySQL](https://www.mysql.com/)                                               | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/mysql) · [Documentation](https://polyclient.pages.dev/databases/mysql)             |
+| [SQLite](https://www.sqlite.org/index.html)                                   | Relational  | 🚧 Developing  | TBD     | [Source](https://github.com/your-repo/plugins/sqlite) · [Documentation](https://polyclient.pages.dev/databases/sqlite)           |
+| [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/mssql) · [Documentation](https://polyclient.pages.dev/databases/mssql)             |
+| [Oracle Database](https://www.oracle.com/database/)                           | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/oracle) · [Documentation](https://polyclient.pages.dev/databases/oracle)           |
+| [MariaDB](https://mariadb.org/)                                               | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/mariadb) · [Documentation](https://polyclient.pages.dev/databases/mariadb)         |
+| [Firebird](https://firebirdsql.org/)                                          | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/firebird) · [Documentation](https://polyclient.pages.dev/databases/firebird)       |
+| [LibSQL](https://libsql.org/)                                                 | Relational  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/libsql) · [Documentation](https://polyclient.pages.dev/databases/libsql)           |
+| [MongoDB](https://www.mongodb.com/)                                           | NoSQL       | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/mongodb) · [Documentation](https://polyclient.pages.dev/databases/mongodb)         |
+| [Redis](https://redis.io/)                                                    | NoSQL       | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/redis) · [Documentation](https://polyclient.pages.dev/databases/redis)             |
+| [Cassandra](https://cassandra.apache.org/)                                    | NoSQL       | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/cassandra) · [Documentation](https://polyclient.pages.dev/databases/cassandra)     |
+| [CockroachDB](https://www.cockroachlabs.com/)                                 | Distributed | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/cockroachdb) · [Documentation](https://polyclient.pages.dev/databases/cockroachdb) |
+| [DuckDB](https://duckdb.org/)                                                 | Analytical  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/duckdb) · [Documentation](https://polyclient.pages.dev/databases/duckdb)           |
+| [ClickHouse](https://clickhouse.com/)                                         | Analytical  | 🗓️ Upcoming    | TBD     | [Source](https://github.com/your-repo/plugins/clickhouse) · [Documentation](https://polyclient.pages.dev/databases/clickhouse)   |
 
 ## Getting Started
 
-To begin using Poqk, follow these steps:
+To begin using PolyClient, follow these steps:
 
-1. **Install Poqk** – Refer to the [installation guide](installation/system-requirements.md) for setup instructions.
+1. **Install PolyClient** – Refer to the [installation guide](installation/system-requirements.md) for setup instructions.
 2. **Connect to a database** – Refer to the [first connection guide](quick-start/first-connection.md) for instructions on how to connect to a database.
-3. **Explore Plugins** – Extend functionality with official and community-developed plugins.
+3. **Explore Plugins** – Extend functionality with [community-developed plugins](/plugins).
 
 ## Contributing
 
-Poqk is an open-source project, and contributions are welcome. To get started:
+PolyClient is an open-source project, and contributions are welcome. To get started:
 
-1. Clone the repository from [https://github.com/poqk/poqk](https://github.com/poqk/poqk).
+1. Clone the repository from [https://github.com/polyclient/polyclient](https://github.com/polyclient/polyclient).
 2. Install the development tools:
-   - [Go >= 1.24](https://go.dev)
-   - [Task](https://taskfile.dev)
-   - [Bun](https://bun.sh) for GUI and documentation.
+    - [Go >= 1.24](https://go.dev)
+    - [Task](https://taskfile.dev)
+    - [Bun](https://bun.sh) for GUI and documentation.
 3. Run `task install` to install the project dependencies.
 4. Run `task dev` to run the CLI.
-5. Follow the [contributor's guide](https://github.com/poqk/poqk/blob/master/CONTRIBUTING.md) for more details.
+5. Refer to the [contributor's guide](https://github.com/polyclient/polyclient/blob/master/CONTRIBUTING.md) for more details.
 
 ## License
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpoqk%2Fpoqk.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpoqk%2Fpoqk?ref=badge_large&issueType=license)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpolyclient%2Fpolyclient.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpolyclient%2Fpolyclient?ref=badge_large&issueType=license)
 
-This project adheres to the [SPDX](https://spdx.dev/) standard. Plugins and documentation are licensed under [Apache-2.0](LICENSES/Apache-2.0.txt). Everything else is licensed under [GPL-3.0-or-later](LICENSES/GPL-3.0-or-later.txt) with a [Plugin Exception](LICENSES/LicenseRef-Poqk-Plugin-Exception.txt). License management is handled according to the [REUSE Specification](https://reuse.software/spec-3.3/).
+This project adheres to the [SPDX](https://spdx.dev/) standard. Plugins and documentation are licensed under [Apache-2.0](https://github.com/polyclient/polyclient/blob/main/LICENSES/Apache-2.0.txt). Everything else is licensed under [GPL-3.0-or-later](https://github.com/polyclient/polyclient/blob/main/LICENSES/GPL-3.0-or-later.txt) with a [Plugin Exception](https://github.com/polyclient/polyclient/blob/main/LICENSES/LicenseRef-PolyClient-Plugin-Exception.txt). License management is handled according to the [REUSE Specification](https://reuse.software/spec-3.3/).

@@ -14,30 +14,15 @@ const docsLayoutOptions: DocsLayoutProps = {
 					return option;
 				}
 
-				const color = `var(--${meta.file.dirname}-color, var(--color-fd-foreground))`;
-
 				return {
 					...option,
-					icon: (
-						<div
-							className="rounded-md p-1 ring-2 [&_svg]:size-5"
-							style={
-								{
-									color,
-									border: `1px solid color-mix(in oklab, ${color} 50%, transparent)`,
-									'--tw-ring-color': `color-mix(in oklab, ${color} 20%, transparent)`,
-								} as object
-							}
-						>
-							{node.icon}
-						</div>
-					),
+					icon: <div className="rounded-md p-1 ring-2 ring-fd-accent bg-fd-accent [&_svg]:size-5">{node.icon}</div>,
 				};
 			},
 		},
 		collapsible: false,
 	},
-	githubUrl: 'https://github.com/poqk/poqk',
+	githubUrl: 'https://github.com/polyclient/polyclient',
 };
 
 export default function Layout({ children }: { children: ReactNode }) {

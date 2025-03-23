@@ -1,6 +1,6 @@
 {
   "title": "Plugins",
-  "description": "Extend Poqk with custom plugins",
+  "description": "Extend PolyClient with plugins",
   "icon": "Plug",
   "root": true,
   "pages": ["index"]

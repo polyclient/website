@@ -1,18 +1,18 @@
 ---
-title: Installing Poqk on Linux
+title: Linux
 ---
 
 ## 1. Bash script (All distros)
 
 ```bash
-curl -fsSL https://poqk.pages.dev/install.sh | bash
+curl -fsSL https://polyclient.pages.dev/install.sh | bash
 ```
 
 The script does the following:
 
 1. Detects the system architecture.
 2. Downloads the appropriate binary.
-3. Extracts it to `/usr/local/bin/poqk`.
+3. Extracts it to `/usr/local/bin/polyclient`.
 4. Ensures the binary is executable.
 5. Adds the binary to the user's PATH.
 
@@ -23,58 +23,58 @@ The script does the following:
 Requires an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers), such as [`yay`](https://github.com/Jguer/yay)/[`paru`](https://github.com/Morganamilo/paru)/[`pikaur`](https://github.com/actionless/pikaur).
 
 ```bash
-yay -S poqk
+yay -S polyclient
 
 # or
-paru -S poqk
+paru -S polyclient
 
 # or
-pikaur -S poqk
+pikaur -S polyclient
 ```
 
 Or manually:  
 
 ```bash
-git clone https://aur.archlinux.org/poqk.git
-cd poqk
+git clone https://aur.archlinux.org/polyclient.git
+cd polyclient
 makepkg -si
 ```
 
 ### Debian-based (Ubuntu, Pop!_OS, Linux Mint, etc.)
 
 ```bash
-echo "deb [trusted=yes] https://poqk.pages.dev/deb stable main" | sudo tee /etc/apt/sources.list.d/poqk.list
+echo "deb [trusted=yes] https://polyclient.pages.dev/deb stable main" | sudo tee /etc/apt/sources.list.d/polyclient.list
 sudo apt update
-sudo apt install poqk
+sudo apt install polyclient
 ```
 
 ### Fedora/RHEL-Based (DNF - Copr Repository)
 
 ```bash
-sudo dnf copr enable poqk/poqk
-sudo dnf install poqk
+sudo dnf copr enable polyclient/polyclient
+sudo dnf install polyclient
 ```
 
 ### openSUSE (Zypper - OBS Repository)
 
 ```bash
-sudo zypper addrepo https://download.opensuse.org/repositories/home:poqk/poqk.repo
+sudo zypper addrepo https://download.opensuse.org/repositories/home:polyclient/polyclient.repo
 sudo zypper refresh
-sudo zypper install poqk
+sudo zypper install polyclient
 ```
 
 ### Alpine Linux (APK - Community Repository)
 
 ```bash
-echo "@community https://poqk.pages.dev/alpine" | sudo tee -a /etc/apk/repositories
+echo "@community https://polyclient.pages.dev/alpine" | sudo tee -a /etc/apk/repositories
 sudo apk update
-sudo apk add poqk
+sudo apk add polyclient
 ```
 
 ### Void Linux (XBPS - Third-Party Repository)
 
 ```bash
-sudo xbps-install -S poqk
+sudo xbps-install -S polyclient
 ```
 
 ## 3. AppImage (Portable Option)
@@ -82,61 +82,41 @@ sudo xbps-install -S poqk
 1. Download:  
 
    ```bash
-   wget https://poqk.pages.dev/releases/latest/poqk.AppImage -O poqk.AppImage
+   wget https://polyclient.pages.dev/releases/latest/polyclient.AppImage -O polyclient.AppImage
    ```
 
 2. Make executable:  
 
    ```bash
-   chmod +x poqk.AppImage
+   chmod +x polyclient.AppImage
    ```
 
 3. Run:  
 
    ```bash
-   ./poqk.AppImage
+   ./polyclient.AppImage
    ```
 
 4. (Optional) Move to a system-wide location:  
 
    ```bash
-   sudo mv poqk.AppImage /usr/local/bin/poqk
+   sudo mv polyclient.AppImage /usr/local/bin/polyclient
    ```
 
 ---
 
-## Post-Installation Steps
+## Post-installation steps
 
-### Verify Installation
-
-```bash
-poqk --version
-```
-
-### Enable Shell Completion
-
-For Bash:
+### Verify installation
 
 ```bash
-poqk completion bash | sudo tee /etc/bash_completion.d/poqk
+polyclient --version
 ```
 
-For Zsh:
 
-```bash
-poqk completion zsh > ~/.zshrc
-source ~/.zshrc
-```
+### Adding `polyclient` to the PATH (if needed)
 
-For Fish:
-
-```bash
-poqk completion fish > ~/.config/fish/completions/poqk.fish
-```
-
-### Adding to PATH (If Needed)
-
-If for some reason `poqk` is not recognized after installation, add it to your PATH:  
+If for some reason `polyclient` is not recognized after installation, add it to your PATH:  
 
 For Bash:
 

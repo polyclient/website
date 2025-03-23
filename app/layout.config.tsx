@@ -25,7 +25,7 @@ export const baseOptions: BaseLayoutProps = {
 						fill="currentColor"
 					/>
 				</svg>
-				Poqk
+				PolyClient
 			</>
 		),
 	},

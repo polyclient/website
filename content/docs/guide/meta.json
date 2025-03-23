@@ -1,6 +1,6 @@
 {
   "title": "Guide",
-  "description": "Guide to start using Poqk",
+  "description": "Guide to start using PolyClient",
   "icon": "Library",
   "root": true,
   "pages": [
@@ -13,12 +13,16 @@
     "installation/macos",
     "installation/windows",
     "installation/docker",
+    "installation/shell-completions",
     "installation/uninstall",
 
     "---Quick Start---",
     "quick-start/first-connection",
     "quick-start/basic-operations",
 
-    "---Configuration---"
+    "---Configuration---",
+    "configuration/index",
+    "configuration/plugins",
+    "configuration/troubleshooting"
   ]
 }

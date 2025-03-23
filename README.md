@@ -1,6 +1,6 @@
-# Poqk Website
+# PolyClient Website
 
-Source for [Poqk](https://github.com/poqk/poqk) website and documentation.
+Source for the [PolyClient](https://github.com/polyclient/polyclient) website and documentation.
 
 ## Contributing
 

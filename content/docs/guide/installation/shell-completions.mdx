@@ -1,0 +1,32 @@
+---
+title: Shell completions
+---
+
+## Overview 
+
+Shell completions improve the usability of the `polyclient` CLI by enabling tab-based autocompletion for commands and arguments. This makes navigation faster, reduces typing errors, and enhances productivity. The following instructions will help you enable shell completions for your preferred shell.
+
+### Bash
+
+```sh
+polyclient completion bash | sudo tee /etc/bash_completion.d/polyclient
+```
+
+### Zsh
+
+```sh
+polyclient completion zsh > ~/.zshrc
+source ~/.zshrc
+```
+
+### Fish
+
+```sh
+polyclient completion fish > ~/.config/fish/completions/polyclient.fish
+```
+
+### Powershell
+
+```powershell
+polyclient completion powershell | Out-String | Invoke-Expression
+```

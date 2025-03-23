@@ -23,8 +23,8 @@ export default async function Page(props: {
 			}}
 			editOnGithub={{
 				repo: 'website',
-				owner: 'poqk',
-				sha: 'master',
+				owner: 'polyclient',
+				sha: 'main',
 				path: `content/docs/${page.file.path}`,
 			}}
 			lastUpdate={page.data.lastModified}
